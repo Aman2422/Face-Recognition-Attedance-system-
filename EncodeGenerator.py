@@ -7,12 +7,6 @@ from firebase_admin import credentials
 from firebase_admin import  storage
 from firebase_admin import db
 
-cred = credentials.Certificate("serviceAcKEY.json")
-firebase_admin.initialize_app(cred, {
-    'databaseURL': "https://faceattendancesystem-705bc-default-rtdb.firebaseio.com/",
-    'storageBucket': "faceattendancesystem-705bc.appspot.com"
-})
-
 
 # Importing student images
 folderPath = 'Images'
