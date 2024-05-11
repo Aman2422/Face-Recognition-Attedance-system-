@@ -10,11 +10,6 @@ from firebase_admin import db
 from firebase_admin import storage
 from datetime import datetime
 
-cred = credentials.Certificate("serviceAcKEY.json")
-firebase_admin.initialize_app(cred, {
-    'databaseURL': "https://faceat",
-    'storageBucket': "faceattendancesystem-705bc.appspot.com"
-})
 
 bucket = storage.bucket()
 
